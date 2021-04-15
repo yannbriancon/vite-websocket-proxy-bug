@@ -11,7 +11,7 @@ export default {
       HelloWorld
     },
     setup(){
-      const ws = new WebSocket(`ws://${window.location.host}/ws`)
+      const ws = new WebSocket(`ws://${window.location.host}/kart/play`)
       ws.onerror = () => {console.log("error")}
     } 
 }

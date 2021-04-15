@@ -6,9 +6,10 @@ export default defineConfig({
   plugins: [vue()],
   server: {
     proxy: {
-        '/ws': {
-            target: 'http://192.168.2.2',
-            ws: true
+        '/kart/play': {
+            target: 'https://www.bunex-industries.com',
+            ws: true,
+            secure: false
         }
     }
 }
